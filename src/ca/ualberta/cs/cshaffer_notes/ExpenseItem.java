@@ -1,3 +1,5 @@
+// ExpenseItem is done
+
 package ca.ualberta.cs.cshaffer_notes;
 
 public class ExpenseItem {
@@ -7,7 +9,7 @@ public class ExpenseItem {
 		this.expenseItemName = expenseItemName;
 	}
 
-	public String getName() {
+	public String getExpenseItemName() {
 		return this.expenseItemName;
 	}
 

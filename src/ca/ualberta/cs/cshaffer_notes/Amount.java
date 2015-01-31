@@ -10,8 +10,8 @@ public class Amount {
 	public Amount(int i) {
 	}
 
-	public int getAmount(ExpenseItem ei) {
-		return ;
+	public Object getAmount(ExpenseItem ei) {
+		return null;
 	}
 
 }
