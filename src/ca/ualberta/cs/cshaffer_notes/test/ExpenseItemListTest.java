@@ -1,3 +1,5 @@
+// ExpenseItemList is done
+
 package ca.ualberta.cs.cshaffer_notes.test;
 
 import java.util.ArrayList;
@@ -30,13 +32,10 @@ public class ExpenseItemListTest extends TestCase {
 		// Add the new ExpenseItem to the new ExpenseItemList
 		createdList.addExpenseItem(ei1);
 		
-		// Create a new ArrayList using the getAllExpenseItems method
-		ArrayList<ExpenseItem> actualList = createdList.getAllExpenseItems();
-		
 		// Assert the size is 1
-		assertTrue("Size of EIList is not 1", actualList.size() == 1);
+		assertTrue("Size of EIList is not 1", createdList.size() == 1);
 		// Assert the ExpenseItemList contains our ExpenseItem
-		assertTrue("The student was not added to the EIList", actualList.contains(ei1));
+		assertTrue("The student was not added to the EIList", createdList.contains(ei1));
 	}
 	
 	// Test for getAllExpenseItems() with size >= 2
@@ -67,12 +66,9 @@ public class ExpenseItemListTest extends TestCase {
 		// Delete the ExpenseItem
 		createdList.removeExpenseItem(ei1);
 		
-		// Get contents of ExpenseItemList
-		ArrayList<ExpenseItem> actualList = createdList.getAllExpenseItems();
-		
 		// Assert that the ExpenseItemList is empty and that ei1 is not in it
-		assertTrue("The list is not empty", actualList.size() == 0);
-		assertFalse("The expense item is still in the list", actualList.contains(ei1));
+		assertTrue("The list is not empty", createdList.size() == 0);
+		assertFalse("The expense item is still in the list", createdList.contains(ei1));
 	}
 
 	// Test getExpenseItem( ExpenseItem )

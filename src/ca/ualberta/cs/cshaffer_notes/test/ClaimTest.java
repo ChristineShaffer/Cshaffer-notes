@@ -1,3 +1,5 @@
+// Claim is done
+
 package ca.ualberta.cs.cshaffer_notes.test;
 
 import ca.ualberta.cs.cshaffer_notes.Claim;
