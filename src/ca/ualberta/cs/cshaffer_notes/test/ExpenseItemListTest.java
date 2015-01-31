@@ -52,4 +52,7 @@ public class ExpenseItemListTest extends TestCase {
 		assertFalse("The expense item is still in the list", actualList.contains(ei1));
 	}
 
+	public void testExpenseItemListgetEI() {
+		
+	}
 }
