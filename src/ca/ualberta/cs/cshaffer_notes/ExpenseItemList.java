@@ -1,3 +1,5 @@
+// ExpenseItemList is done
+
 package ca.ualberta.cs.cshaffer_notes;
 
 import java.util.ArrayList;
@@ -34,5 +36,15 @@ public class ExpenseItemList {
 	public void removeExpenseItem(ExpenseItem ei) {
 		expenseItemList.remove(ei);
 	}
+
+	public int size() {
+		return expenseItemList.size();
+	}
+
+	public boolean contains(ExpenseItem ei) {
+		return expenseItemList.contains(ei);
+	}
+	
+	
 
 }
