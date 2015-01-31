@@ -2,14 +2,14 @@ package ca.ualberta.cs.cshaffer_notes;
 
 public class Claim {
 	protected String claimName;
-
+	
+	// Constructor
 	public Claim(String claimName) {
+		this.claimName = claimName;
 	}
 
-/*
-	public String getName() {
+	public String getClaimName() {
 		return this.claimName;
 	}
-*/
 
 }
