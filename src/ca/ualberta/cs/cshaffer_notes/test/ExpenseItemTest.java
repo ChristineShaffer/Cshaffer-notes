@@ -1,3 +1,5 @@
+// ExpenseItem is done
+
 package ca.ualberta.cs.cshaffer_notes.test;
 
 import ca.ualberta.cs.cshaffer_notes.ExpenseItem;
@@ -8,7 +10,7 @@ public class ExpenseItemTest extends TestCase {
 	public void testExpenseItemName() {
 		String expenseItemName = "An EI";
 		ExpenseItem expenseItem = new ExpenseItem(expenseItemName);
-		assertTrue("Names are not equal", expenseItemName.equals(expenseItem.getName()));
+		assertTrue("Names are not equal", expenseItemName.equals(expenseItem.getExpenseItemName()));
 	}
 
 }
