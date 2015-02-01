@@ -32,29 +32,20 @@
         android:layout_marginRight="16dp"
         android:text="Delete" />
 
-    <EditText
-        android:id="@+id/updateExistingText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:ems="10"
-        android:gravity="center"
-        android:text="Existing Claims" >
-
-        <requestFocus />
-    </EditText>
-
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/updateExistingEmailButton"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/updateExistingText"
         android:paddingLeft="50dp" >
-
     </ListView>
+
+    <TextView
+        android:id="@+id/upDateExistingHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Existing Claims" />
 
 </RelativeLayout>

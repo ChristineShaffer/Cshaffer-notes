@@ -16,10 +16,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+// THIS IS THE MAIN ACTIVITY (i.e. THE ACTIVITY FOR THE MAIN SCREEN)
+
 package ca.ualberta.cs.cshaffer_notes;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
@@ -39,13 +42,31 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+	// Method for "Add New Claim" button
 	public void addNewClaim(View v1) {
 		Toast.makeText(this, "Add New Claim", Toast.LENGTH_SHORT).show();
-		ClaimListController clc = new ClaimListController();
-		Claim c = clc.getClaim();
-		if( c.getClaimName() == "-1" ) {
-			Toast.makeText(this, "There are no existing claims!", Toast.LENGTH_SHORT).show();
-		}
+		
+		// We want this method to actually go to another activity (the screen to enter info)
+		// so we make an intent that refers to the current activity, and the activity we 
+		// want to go to.  When we call this method (when the button is pressed) this activity
+		// will be started
+		Intent intent = new Intent(MainActivity.this, AddNewClaimActivity.class);
+		startActivity(intent);
+	}
+	
+	// Method for "Update Existing Claim" button
+	public void updateExistingClaim(View v1) {
+		Toast.makeText(this, "Update Existing Claim", Toast.LENGTH_SHORT).show();
+		Intent intent = new Intent(MainActivity.this, UpdateExistingClaimActivity.class);
+		startActivity(intent);
 	}
 
 }
+
+
+
+
+
+
+
+

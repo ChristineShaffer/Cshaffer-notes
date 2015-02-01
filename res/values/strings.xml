@@ -4,5 +4,7 @@
     <string name="app_name">Cshaffer-notes</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_new_claim">Add New Claim Activity</string>
+    <string name="title_activity_update_existing_claim">Update Existing Claim Activity</string>
 
 </resources>
