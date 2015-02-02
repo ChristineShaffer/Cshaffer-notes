@@ -5,7 +5,7 @@ import ca.ualberta.cs.cshaffer_notes.ClaimList;
 import junit.framework.TestCase;
 
 public class ClaimListTest extends TestCase {
-	
+/*	
 	public void testEmptyClaimList() {
 		ClaimList claimList = new ClaimList();
 		assertTrue("The created ClaimList is nonempty", claimList.size() == 0);
@@ -78,5 +78,6 @@ public class ClaimListTest extends TestCase {
 		Claim defClaim = new Claim("-1");
 		assertFalse("Didn't return default Claim as expected", claimList.getClaim(claim).equals(defClaim));
 	}
+	*/
 
 }
