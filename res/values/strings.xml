@@ -6,5 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_add_new_claim">Add New Claim Activity</string>
     <string name="title_activity_update_existing_claim">Update Existing Claim Activity</string>
+    <string name="title_activity_add_new_claim_next">Add New Claim Next Activity</string>
+    <string name="title_activity_add_new_claim_next2">Add New Claim Next2 Activity</string>
 
 </resources>

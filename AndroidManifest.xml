@@ -37,6 +37,14 @@
             android:name="ca.ualberta.cs.cshaffer_notes.UpdateExistingClaimActivity"
             android:label="@string/title_activity_update_existing_claim" >
         </activity>
+        <activity
+            android:name="ca.ualberta.cs.cshaffer_notes.AddNewClaimNextActivity"
+            android:label="@string/title_activity_add_new_claim_next" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.cshaffer_notes.AddNewClaimNext2Activity"
+            android:label="@string/title_activity_add_new_claim_next2" >
+        </activity>
     </application>
 
 </manifest>

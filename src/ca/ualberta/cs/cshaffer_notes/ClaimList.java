@@ -1,6 +1,7 @@
 package ca.ualberta.cs.cshaffer_notes;
 
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 
 public class ClaimList {
 	protected ArrayList<Claim> claimList;
@@ -38,8 +39,9 @@ public class ClaimList {
 			}
 		}
 		
-		Claim defaultClaim = new Claim("-1");
+		Claim defaultClaim = new Claim("-1", "-1", null, null);
 		return defaultClaim;
 	}
+
 	
 }

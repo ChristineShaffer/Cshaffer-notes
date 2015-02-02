@@ -1,12 +1,15 @@
-package ca.ualberta.cs.cshaffer_notes;
+// We want this class in order to keep a persistent ClaimList for our app
+// For now we're shoving the ClaimList in this class -- might change later
 
-// We're writing this controller because we want to be able to actually do stuff
+// THIS IS THE CLAIM LIST FOR THE APP
+
+package ca.ualberta.cs.cshaffer_notes;
 
 public class ClaimListController {
 	
-	// Lazy Singleton because we want the claimList to be persistent, but we also don't
-	// want to have unnecessary lists initialized 
+	// Lazy Singleton because we don't want to have unnecessary lists initialized (only one)
 	private static ClaimList claimList = null;
+	
 	// Doesn't belong to an instance (b/c static)
 	static public ClaimList getClaimList() {
 		if( claimList == null ) {
@@ -15,12 +18,11 @@ public class ClaimListController {
 		}
 		return claimList;
 	}
-	// NOW WE HAVE SOMETHING WE CAN ACCESS -- but we also want the controller to do
-	// something for us
+	// NOW WE HAVE SOMETHING WE CAN ACCESS
 	
-	/*
-	public Claim getClaim() {
-		return getAllClaims().getClaim();
+	// Method so that app knows what to do with its ClaimList
+	public void addClaim(Claim claim) {
+		claimList.addClaim(claim);
 	}
-	*/
+	
 }
