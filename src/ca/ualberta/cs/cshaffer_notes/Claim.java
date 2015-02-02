@@ -1,11 +1,12 @@
 package ca.ualberta.cs.cshaffer_notes;
 
+// http://tutorials.jenkov.com/java-date-time/java-util-calendar.html [Feb. 1, 2015]
+// http://www.mkyong.com/java/java-date-and-calendar-examples/ [Feb.1, 2015]
 import java.util.GregorianCalendar;
 
 public class Claim {
 	protected String claimName;
 	protected String claimDescription;
-	// http://tutorials.jenkov.com/java-date-time/java-util-calendar.html [Feb. 1, 2015]
 	protected GregorianCalendar claimStartDate;
 	protected GregorianCalendar claimEndDate;
 	
@@ -35,6 +36,10 @@ public class Claim {
 	
 	public void setClaimEndDate(GregorianCalendar claimEndDate) {
 		this.claimEndDate = claimEndDate;
+	}
+	
+	public void setClaimStartDate(GregorianCalendar claimStartDate) {
+		this.claimStartDate = claimStartDate;
 	}
 
 }

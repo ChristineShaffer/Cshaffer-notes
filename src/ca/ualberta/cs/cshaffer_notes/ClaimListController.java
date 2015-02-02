@@ -5,6 +5,8 @@
 
 package ca.ualberta.cs.cshaffer_notes;
 
+import java.util.GregorianCalendar;
+
 public class ClaimListController {
 	
 	// Lazy Singleton because we don't want to have unnecessary lists initialized (only one)
@@ -18,11 +20,17 @@ public class ClaimListController {
 		}
 		return claimList;
 	}
-	// NOW WE HAVE SOMETHING WE CAN ACCESS
+
 	
-	// Method so that app knows what to do with its ClaimList
 	public void addClaim(Claim claim) {
-		claimList.addClaim(claim);
+		getClaimList().addClaim(claim);
 	}
 	
+	public void editClaimStart(Claim claim, GregorianCalendar claimStartDate) {
+		((Claim) getClaimList().getClaim(claim)).setClaimStartDate(claimStartDate);
+	}
+	
+	public void editClaimEnd(Claim claim, GregorianCalendar claimEndDate) {
+		((Claim) getClaimList().getClaim(claim)).setClaimEndDate(claimEndDate);
+	}
 }
