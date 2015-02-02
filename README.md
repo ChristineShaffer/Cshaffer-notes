@@ -3,6 +3,9 @@ Travel expense application for assignmen 1 of CMPUT 301 winter 2015.
   App keeps track of travel expense items for each claim.
   Limitations: app can open and move between activities, however, functionality isn't there yet.
 
+Video (not everything works so I just demonstrated the stuff that does work): https://archive.org/details/CshaffernotesDemonstrationcmput301
+
+
 Copyright 2015 Christine Shaffer cshaffer@ualberta.ca
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
