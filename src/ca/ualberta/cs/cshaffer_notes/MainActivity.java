@@ -16,7 +16,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// THIS IS THE MAIN ACTIVITY (i.e. THE ACTIVITY FOR THE MAIN SCREEN)
+// http://youtu.be/5PPD0ncJU1g [Feb2, 2015]
+// http://youtu.be/VKVYUXNuDDg [Feb2, 2015]
+// http://youtu.be/k9ZNbsc0Qgo [Feb2, 2015]
+// http://youtu.be/fxjIA4HIruU [Feb2, 2015]
+// http://youtu.be/uLnoI7mbuEo [Feb2, 2015]
 
 package ca.ualberta.cs.cshaffer_notes;
 
