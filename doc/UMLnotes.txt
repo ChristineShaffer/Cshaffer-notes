@@ -1,0 +1,10 @@
+*NOTES FOR UML for cshaffer-Notes app*
+
+-ClaimList class implements an ArrayList that holds all of the given Claims.
+
+-Claim class saves and stores the information about a single Claim.
+
+-ExpenseItemList saves all of the ExpenseItems for a given Claim.
+
+-ExpenseItem save and stores all of the information about a single ExpenseItem.
+
